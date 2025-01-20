@@ -1,0 +1,27 @@
+var a = 10;
+var b = 20;
+var c = "ccc";
+var cond = true;
+{
+    var a = 40;
+    var d = c;
+    var c = "CCC";
+
+    print a + b;
+    cond = false;
+    print cond;
+    if(cond) {
+        print a / b;
+    } else {
+        print c + d;
+    }
+}
+var d = "ddd";
+cond = !cond;
+if(cond) {
+    print cond;
+    print a / b;
+} else {
+    print cond;
+    print c + d;
+}
